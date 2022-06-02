@@ -17,15 +17,16 @@
 ### Code Example
 *Write a `makeItFunny()` function that takes a string as input and returns a copy of it with every n-th element converted to uppercase. n is given as a function argument:*
 
-``` makeItFunny(str, n) {
+```
+makeItFunny(str, n) {
   let i = 0;
   let result = '';
   while (i < str.length) {
     const current = str[i];
     if ((i + 1) % n === 0) {
-      result = `${result}${current.toUpperCase()}`;
+      result = \`${result}${current.toUpperCase()}\`;
     } else {
-      result = `${result}${current}`;
+      result = \`${result}${current}\`;
     }
     i++;
   }
