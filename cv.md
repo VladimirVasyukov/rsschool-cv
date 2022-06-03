@@ -1,6 +1,6 @@
 # Vladimir Vasyukov
 
-## Junior Frontend Developer
+## *Junior Frontend Developer*
 
 ### Contact Info
 * **E-mail:** vladimir.vasyukov7@gmail.com
@@ -15,18 +15,19 @@
 * VS Code, Intellij IDEA
 
 ### Code Example
-*Write a `makeItFunny()` function that takes a string as input and returns a copy of it with every n-th element converted to uppercase. n is given as a function argument:*
+*Write a `makeItUpperСase()` function that takes a string as input and returns a copy of it with every n-th element converted to uppercase. n is given as a function argument:*
 
-```
-makeItFunny(str, n) {
+```javascript
+function makeItUpperCase(str, n) {
   let i = 0;
   let result = '';
+
   while (i < str.length) {
     const current = str[i];
     if ((i + 1) % n === 0) {
-      result = \`${result}${current.toUpperCase()}\`;
+      result = `${result}${current.toUpperCase()}`;
     } else {
-      result = \`${result}${current}\`;
+      result = `${result}${current}`;
     }
     i++;
   }
@@ -50,4 +51,4 @@ makeItFunny(str, n) {
     * Java-developer
 
 ### English
-English - *B1* (I successfully completed English courses at a British Study School in London)
+English - *B1* (I successfully completed English courses at the British Study School in London)
