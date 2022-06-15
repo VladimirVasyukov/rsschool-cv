@@ -21,6 +21,10 @@ body {
   color: #cdcdcd;
 }
 
+:root {
+  color-scheme: dark;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -54,6 +58,7 @@ body {
 }
 
 .main {
+  padding: 0 20px;
   margin-bottom: auto;
   background-color: #1b1b1b;
 }
@@ -91,11 +96,6 @@ body {
 .pre {
   overflow-x: auto;
   white-space: pre-wrap;
-}
-
-.section-summary {
-  font-size: 18px;
-  font-family: 'Joan', serif;
 }
 
 .section-courses,
@@ -256,4 +256,40 @@ body {
   background-image: url("./assets/svg/rss.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .section {
+    width: 100%;
+  }
+  .section-profile {
+    flex-direction: column;
+    align-items: center;
+  }  
+  .section-courses {
+    border-bottom: 1px solid #4e4e4e;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .main-title {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }  
 }
