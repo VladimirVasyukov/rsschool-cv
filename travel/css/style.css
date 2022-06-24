@@ -8,6 +8,7 @@
 @font-face {
     font-family: Magra;
     src: url("/travel/fonts/Magra/Magra-Regular.ttf");
+    font-weight: 600;
 }
 
 @font-face {
@@ -30,16 +31,39 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    background: url(/travel/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.png) top no-repeat,
-        url(/travel/img/Rectangle\ 33.png) bottom no-repeat;
-
+    background-image: url(/travel/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.png),
+        url(/travel/img/Rectangle\ 33.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: 1440px 765px, 1440px 1331px;
 }
 
 header {
+    display: flex;
+    align-items: center;
     background-color: #F2785C;
+    height: 90px;
+    width: 1440px;
     opacity: 0.7;
     border: 2px solid red;
+}
+
+.header-logo-text {
+    width: 180px;
+    height: 31px;
+    margin-left: 156px;
+    margin-top: 25px;
+    padding: 0;
+    font-family: Magra;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
 }
 
 main {
@@ -230,16 +254,61 @@ footer {
     color: #FFF;
 }
 
-.frame-text {
-    display: block;
-    margin: -2px;
+.frame1-text-steps {
+    width: 247px;
+    height: 24px;
     padding: 0;
+    margin: 0;
     font-family: Aleo;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
     color: #0D606F;
+}
+
+.frame2-text-steps {
+    width: 222px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    font-family: Aleo;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0D606F;
+}
+
+.frame3-text-steps {
+    width: 317px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    font-family: Aleo;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0D606F;
+}
+
+.frame-text {
+    width: 760px;
+    height: 184px;
+    padding: 0;
+    margin: 0 0 0 24px;
+    font-family: Aleo;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0D606F;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #destinations {
@@ -260,7 +329,41 @@ footer {
 }
 
 .story {
-    width: 250;
-    height: 1200px;
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    height: 250px;
     border: 2px solid blue;
+}
+
+h3 {
+    padding: 0;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    width: 760px;
+    height: 42px;
+}
+
+.image {
+    width: 400px;
+    height: 250px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+}
+
+.story-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-family: Aleo;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0D606F;
 }
