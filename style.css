@@ -107,6 +107,11 @@ body {
   border-radius: 50%;
 }
 
+.section:nth-child(6),
+.section:nth-child(7) {
+  border-bottom: 0;
+}
+
 .section-profile-title {
   display: flex;
   flex-direction: column;
@@ -269,8 +274,8 @@ body {
     flex-direction: column;
     align-items: center;
   }  
-  .section:last-child {
-    border-bottom: none;
+  .section:nth-child(6) {
+    border-bottom: 1px solid;
   }
   .footer-container {
     flex-direction: column;
