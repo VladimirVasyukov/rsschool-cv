@@ -100,11 +100,6 @@ body {
   white-space: pre-wrap;
 }
 
-.section-education,
-.section-courses {
-  border-bottom: 0;
-}
-
 .section-profile-logo {
   width: 200px;
   height: 200px;
@@ -274,8 +269,8 @@ body {
     flex-direction: column;
     align-items: center;
   }  
-  .section-courses {
-    border-bottom: 1px solid #4e4e4e;
+  .section:last-child {
+    border-bottom: none;
   }
   .footer-container {
     flex-direction: column;
