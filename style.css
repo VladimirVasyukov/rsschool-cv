@@ -204,19 +204,20 @@ section:nth-last-child(2) {
   background-repeat: no-repeat;
 }
 
-.contacts-item:first-child:before {
+.location:before {
+  left: 2px;
   background-image: url("assets/svg/Location.svg");
 }
 
-.contacts-item:nth-last-child(3):before {
+.email:before {
   background-image: url("assets/svg/Email.svg");
 }
 
-.contacts-item:nth-last-child(2):before {
+.github:before {
   background-image: url("assets/svg/GitHub.svg");
 }
 
-.contacts-item:last-child:before {
+.discord:before {
   background-image: url("assets/svg/Discord.svg");
 }
 
@@ -233,7 +234,7 @@ section:nth-last-child(2) {
   color: #e2e2e2;
 }
 
-.github {
+.footer-github {
   color: #e2e2e2;
   text-decoration: none;
   line-height: 45px;
